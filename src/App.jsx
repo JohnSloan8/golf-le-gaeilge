@@ -7,7 +7,15 @@ export default function App() {
     <div>
       <Navbar bg="secondary" expand="sm">
         <Container>
-          <Navbar.Brand as={Link} to="/home">Galf le Gaeilge</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/home">
+            <img
+              alt=""
+              src="images/Golf.ai"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}            
+            Galf le Gaeilge</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
