@@ -1,21 +1,21 @@
 import * as React from "react";
 import { Link, Outlet } from "react-router-dom"
-import { Navbar, Nav, Container } from "react-bootstrap"
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap"
 
 export default function App() {
   return (
-    <div>
-      <Navbar bg="secondary" expand="sm">
+
+    <>
+      <Navbar fixed="top" bg="light" expand="sm">
         <Container>
           <Navbar.Brand as={Link} to="/home">
             <img
               alt=""
-              src="images/Golf.ai"
+              src="/src/images/Golf.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
-            />{' '}            
-            Galf le Gaeilge</Navbar.Brand>
+            /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -29,11 +29,11 @@ export default function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container fluid="md" className="pt-3">
-        <Container className="p-2">
+      {/* <Container fluid style={{height: '100%', padding: '0', bottom: '0', border: '1px dashed black'}}> */}
+        <Container style={{maxWidth: '767px', bottom: '0', height: '100%', padding: '0', paddingTop: '90px', overflowY: "scroll"}}>
           <Outlet />
         </Container>
-      </Container>
-    </div> 
+      {/* </Container> */}
+    </> 
   );
 }

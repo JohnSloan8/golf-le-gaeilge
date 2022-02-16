@@ -1,6 +1,7 @@
 $primary: #F18F01;
 $secondary: #048BA8;
 $info: #2E4057;
+$light: #d3ffd8;
 
 @font-face {
   font-family: 'AEC';
@@ -11,6 +12,14 @@ $info: #2E4057;
 
 .container {
   font-family: AEC;
+}
+
+.card {
+  border: none !important;
+}
+
+a {
+  color: $secondary !important;
 }
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
