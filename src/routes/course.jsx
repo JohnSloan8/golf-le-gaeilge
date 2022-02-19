@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { getCourse } from '../data-courses';
-import { Image, Container, Card } from 'react-bootstrap';
+import { Image, Container, Card, Button } from 'react-bootstrap';
 import { getPlayersByCourse } from '../data-players';
 
 export default function Course() {
@@ -11,7 +11,7 @@ export default function Course() {
   console.log('course:', course);
   return (
     <Card style={{ width: '100%' }}>
-      <Container>
+      <Container className="text-center">
         <Image
           fluid
           src={course.logoURL}
@@ -26,10 +26,20 @@ export default function Course() {
         <Card.Subtitle className="mb-2 text-muted text-center">
           {course.county}
         </Card.Subtitle>
-        <Container style={{ backgroundColor: 'skyBlue' }} className="pt-3">
-          <Card.Text>Imreorí</Card.Text>
+        <Container className="p-3">
+          <Card.Text className="text-center">Imreorí</Card.Text>
           {players.map((player) => (
-            <p>{player.firstName}</p>
+            <Container className="text-center" style={{ backgroundColor: '#eeeeff', margin: '4px', padding: "1em" }}>
+		<Image
+		  fluid
+		  src='/src/images/blank-profile.jpg'
+		  style={{ height: '150px', margin: '5px' }}
+		/>
+	    	<p>ainm: {player.firstName} {player.surname}</p>
+	    	<p>Gaeilge: {player.IrishLevel}</p>
+	    	<p>handicap: {player.handicap}</p>
+		<Button className="btn-secondary" style={{color: "white"}}>request game</Button>
+	    </Container>
           ))}
         </Container>
       </Card.Body>

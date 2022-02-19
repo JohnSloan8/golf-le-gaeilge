@@ -5,6 +5,7 @@ import Courses from './routes/courses';
 import Course from './routes/course';
 import Players from './routes/players';
 import Home from './routes/home';
+import Dictionary from './routes/dictionary';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom.scss'
 
@@ -20,6 +21,7 @@ render(
             <Route path=":courseName" element={<Course />} />
           </Route>
           <Route path="players" element={<Players />} />
+          <Route path="dictionary" element={<Dictionary />} />
           <Route
             path="*"
             element={

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
 
 export default function App() {
   return (
@@ -8,12 +8,12 @@ export default function App() {
       <Navbar fixed="top" bg="light" expand="sm">
         <Container>
           <Navbar.Brand as={Link} to="/home">
-            <img
+	    <Image
               alt=""
               src="/src/images/Golf.png"
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top mx-auto"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,8 +25,8 @@ export default function App() {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/players">
-                  Imreoirí
+                <Nav.Link as={Link} to="/dictionary">
+                  Foclóir
                 </Nav.Link>
               </Nav.Item>
             </Nav>
@@ -42,7 +42,7 @@ export default function App() {
           padding: '0',
           marginTop: '90px',
           overflowY: 'scroll',
-          backgroundColor: '#eeeeee',
+          backgroundColor: '#ffffff',
         }}
       >
         <Outlet />
