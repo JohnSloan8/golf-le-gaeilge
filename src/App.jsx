@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
 
+
 export default function App() {
   return (
     <>
@@ -10,7 +11,7 @@ export default function App() {
           <Navbar.Brand as={Link} to="/home">
 	    <Image
               alt=""
-              src="/src/images/Golf.png"
+		    src='/Golf.png'
               width="30"
               height="30"
               className="d-inline-block align-top mx-auto"

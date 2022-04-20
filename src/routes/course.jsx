@@ -32,7 +32,7 @@ export default function Course() {
             <Container className="text-center" style={{ backgroundColor: '#eeeeff', margin: '4px', padding: "1em" }}>
 		<Image
 		  fluid
-		  src='/src/images/blank-profile.jpg'
+		  src='/blank-profile.jpg'
 		  style={{ height: '150px', margin: '5px' }}
 		/>
 	    	<p>ainm: {player.firstName} {player.surname}</p>
