@@ -2,7 +2,6 @@
   "name": "tutorial",
   "private": true,
   "scripts": {
-    "start": "node App.jsx",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
