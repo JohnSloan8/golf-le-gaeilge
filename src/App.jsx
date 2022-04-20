@@ -29,6 +29,11 @@ export default function App() {
                   Foclóir
                 </Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link as={Link} to="/outings">
+                  Outings
+                </Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>

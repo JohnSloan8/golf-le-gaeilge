@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Courses from './routes/courses';
 import Course from './routes/course';
+import Outings from './routes/outings';
 import Players from './routes/players';
 import Home from './routes/home';
 import Dictionary from './routes/dictionary';
@@ -21,6 +22,7 @@ render(
             <Route path=":courseName" element={<Course />} />
           </Route>
           <Route path="players" element={<Players />} />
+          <Route path="outings" element={<Outings />} />
           <Route path="dictionary" element={<Dictionary />} />
           <Route
             path="*"
