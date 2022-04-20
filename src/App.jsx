@@ -8,7 +8,7 @@ export default function App() {
     <>
       <Navbar fixed="top" bg="light" expand="sm">
         <Container>
-          <Navbar.Brand as={Link} to="/home">
+          <Navbar.Brand as={Link} to="">
 	    <Image
               alt=""
 		    src='/Golf.png'
